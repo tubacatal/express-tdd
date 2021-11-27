@@ -4,7 +4,7 @@
   "description": "tdd with express",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app",
+    "start": "nodemon index",
     "test": "jest --watch",
     "lint": "eslint ."
   },
@@ -40,7 +40,12 @@
     },
     "rules": {
       "eqeqeq": "warn",
-      "prettier/prettier": "warn"
+      "prettier/prettier": [
+        "warn",
+        {
+          "endOfLine": "auto"
+        }
+      ]
     }
   },
   "prettier": {
