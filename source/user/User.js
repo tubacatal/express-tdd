@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = require('../config/database');
+const sequelizeInstance = require('../config/database');
 
 const Model = Sequelize.Model;
 
@@ -18,7 +18,7 @@ User.init(
     },
   },
   {
-    sequelize,
+    sequelize: sequelizeInstance,
     modelName: 'user',
   }
 );

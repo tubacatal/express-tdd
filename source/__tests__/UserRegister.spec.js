@@ -1,12 +1,12 @@
 const request = require('supertest');
 const app = require('../src/app');
 const User = require('../user/User');
-const sequelize = require('../config/database');
+const sequelizeInstance = require('../config/database');
 
 // make sure db is created before test are runned
 beforeAll(() => {
   jest.setTimeout(20000);
-  return sequelize.sync();
+  return sequelizeInstance.sync();
 });
 
 // clear the table before each test for predictable behaviour
