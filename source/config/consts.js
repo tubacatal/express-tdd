@@ -1,3 +1,3 @@
 module.exports = Object.freeze({
-  HASH_ROUND: 10,
+  HASH_ROUND: 5,
 });
