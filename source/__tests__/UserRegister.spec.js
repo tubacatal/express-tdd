@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../src/app');
-const User = require('../user/User');
-const sequelizeInstance = require('../config/database');
+const User = require('../src/user/User');
+const sequelizeInstance = require('../src/config/database');
 
 // make sure db is created before test are runned
 beforeAll(() => {
